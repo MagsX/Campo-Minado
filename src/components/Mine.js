@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native'
 
 export default props => {
     return (
-        <View style={StyleSheet.container}>
+        <View style={styles.container}>
             <View style={styles.coreMine} />
             <View style={[styles.line]} />
             <View style={[styles.line, { transform: [{ rotate: '45deg' }] }]} />
@@ -13,7 +13,7 @@ export default props => {
     )
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'center',
@@ -32,5 +32,6 @@ const style = StyleSheet.create({
         width: 20,
         borderRadius: 3,
         backgroundColor: '#000',
+        
     }
 })
